@@ -170,3 +170,18 @@ JetBrains solutions (as of 2023/2024).
 [Zed](https://zed.dev/) is an up-and-coming IDE, superfast and with an AI first mindset. I love it, but at the time of
 this writing, it is missing a critical feature a [diff view](https://github.com/zed-industries/zed/issues/4523).
 
+## Additional Useful Software
+
+- [Bitwarden](https://bitwarden.com/) - affordable password manager
+- [Deskflow](https://github.com/deskflow/deskflow) - Replaces Synergy as a KVM software to share your mouse and keyboard
+  between multiple devices. Haven't tried this yet, I'll have to replace my Synergy install soon.
+- [Docker Desktop](https://www.docker.com/products/docker-desktop/) - For container management
+- [Handbrake](https://handbrake.fr/downloads.php) - Super Useful Video compression app
+- [Insomnia](https://insomnia.rest/download) - For testing API endpoints, GraphQL and REST
+- [Karabiner](https://karabiner-elements.pqrs.org/) for customizing Keyboard Keys
+- [Sequel Ace](https://sequel-ace.com/) - Mysql/MariaDB Database Management & Visualizer
+- [TextMate](https://macromates.com/) - TextEditor that compares to Notepad++
+- [TinkerTool](https://www.bresink.com/osx/TinkerTool.html) - TinkerTool is an application that gives you access to
+  additional preference settings Apple has built into macOS.
+- [Transmission](https://transmissionbt.com/download.html) - Bittorrent Client
+- [VLC](https://www.videolan.org/vlc/) - Universal Media Player
