@@ -12,7 +12,7 @@ export LESS=-FRX
 export PATH="$PATH:$HOME/Library/Application Support/JetBrains/Toolbox/scripts"
 
 # Setting PATH for Python 3.12
-export PATH="/Library/Frameworks/Python.framework/Versions/3.12/bin:$PATH"
+export PATH="/Library/Frameworks/Python.framework/Versions/3.12/bin:${PATH}"
 
 # Setting PATH for Ruby from Homebrew Install
 export PATH="/opt/homebrew/opt/ruby/bin:$PATH"
@@ -57,12 +57,9 @@ export SDKMAN_DIR="$HOME/.sdkman"
 
 export PHPBREW_SET_PROMPT=1
 
-[[ -s "$HOME/.phpbrew/bashrc" ]] && source "$HOME/.phpbrew/bashrc"
+source ~/.phpbrew/bashrc
 
 ################### aliases ###################
-
-# Run Updates
-alias updates='brew update && brew upgrade && echo "\n$(tput bold)$(tput setaf 4)==> $(tput setaf 7)Updating Node.js through NVM...$(tput sgr0)" && nvm install stable --default && echo "\n$(tput bold)$(tput setaf 4)==> $(tput setaf 7)Updating Global NPM Packages...$(tput sgr0) " &&npm update --global'
 
 # Git Reset Hard Alias
 alias clr='git reset HEAD --hard && git clean -f -d'
@@ -71,9 +68,26 @@ alias clr='git reset HEAD --hard && git clean -f -d'
 #alias archie='shopify theme component'
 #alias component='shopify theme component'
 
-
 ###### Run updates daily ######
 
+BREW_STYLE_POINTER="$(tput bold)$(tput setaf 4)==>$(tput setaf 7)"
+
+### Individual Update Aliases
+alias updatebrew='brew update && brew upgrade'
+alias updatenode='echo "\n$BREW_STYLE_POINTER Updating Node.js through NVM...$(tput sgr0)" && nvm install stable --default'
+alias updategnp='echo "\n$BREW_STYLE_POINTER Updating Global NPM Packages...$(tput sgr0) " &&npm update --global'
+
+### Collated Update Aliases
+UPDATES_ALIAS='updatebrew'
+# Add Node.js Update through NVM if NVM is present
+command -v nvm &> /dev/null && UPDATES_ALIAS="${UPDATES_ALIAS} && updatenode"
+# Add Global Node.js Packages Update through NPM if NPM is present
+command -v npm &> /dev/null && UPDATES_ALIAS="${UPDATES_ALIAS} && updategnp"
+
+alias updates=$UPDATES_ALIAS
+
+
+### Automate Daily RUN - Excluding IntelliJ Embedded Shell
 if [ -z "$INTELLIJ_ENVIRONMENT_READER" ]; then
 	marker_file="$HOME/.updates_last_run_date"
 
