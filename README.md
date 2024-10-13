@@ -133,7 +133,7 @@ This repository includes 3 zsh config files
     - Loads after `.zshrc`
     - I use it to override Oh my ZSH Jovial settings that I do not like
 
-Reminder: The load order for zsh config files is the following:
+Reminder: The load order for zsh config files is the following[*](https://zsh.sourceforge.io/Doc/Release/Files.html#Startup_002fShutdown-Files):
 
 - .zshenv
 - .zprofile
