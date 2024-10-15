@@ -77,7 +77,7 @@ nvm install --lts
 Use [SDKMan](https://sdkman.io/) to manage Java, Kotlin, Groovy, Gradle, Maven & more
 
 ```shell
-curl -s "https://get.sdkman.io" | zsh
+curl -s "https://get.sdkman.io" | bash
 ```
 
 Open a new shell, then run
