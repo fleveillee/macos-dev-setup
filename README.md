@@ -133,7 +133,8 @@ This repository includes 3 zsh config files
     - Loads after `.zshrc`
     - I use it to override Oh my ZSH Jovial settings that I do not like
 
-Reminder: The load order for zsh config files is the following[*](https://zsh.sourceforge.io/Doc/Release/Files.html#Startup_002fShutdown-Files):
+Reminder: The load order for zsh config files is the
+following[*](https://zsh.sourceforge.io/Doc/Release/Files.html#Startup_002fShutdown-Files):
 
 - .zshenv
 - .zprofile
@@ -177,6 +178,7 @@ this writing, it is missing a critical feature a [diff view](https://github.com/
   between multiple devices. Haven't tried this yet, I'll have to replace my Synergy install soon.
 - [Docker Desktop](https://www.docker.com/products/docker-desktop/) - For container management
 - [Handbrake](https://handbrake.fr/downloads.php) - Super Useful Video compression app
+- [ImageOptim](https://imageoptim.com/mac) - Reduces image file sizes
 - [Insomnia](https://insomnia.rest/download) - For testing API endpoints, GraphQL and REST
 - [Karabiner](https://karabiner-elements.pqrs.org/) for customizing Keyboard Keys
 - [Sequel Ace](https://sequel-ace.com/) - Mysql/MariaDB Database Management & Visualizer
