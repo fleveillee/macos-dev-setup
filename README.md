@@ -116,7 +116,7 @@ brew install php phpbrew composer
 
 ## ZSH Config files
 
-This repository includes 3 zsh config files
+This repository includes three zsh config files
 
 - [.zprofile](.zprofile)
     - Loads before .zshrc
@@ -174,8 +174,8 @@ this writing, it is missing a critical feature a [diff view](https://github.com/
 ## Additional Useful Software
 
 - [Bitwarden](https://bitwarden.com/) - affordable password manager
-- [Deskflow](https://github.com/deskflow/deskflow) - Replaces Synergy as a KVM software to share your mouse and keyboard
-  between multiple devices. Haven't tried this yet, I'll have to replace my Synergy install soon.
+- [Deskflow](https://github.com/deskflow/deskflow) - Replaces Synergy as KVM software to share your mouse and keyboard
+  between multiple devices. I Haven't tried this yet, I'll have to replace my Synergy installation soon.
 - [Docker Desktop](https://www.docker.com/products/docker-desktop/) - For container management
 - [Handbrake](https://handbrake.fr/downloads.php) - Super Useful Video compression app
 - [ImageOptim](https://imageoptim.com/mac) - Reduces image file sizes
