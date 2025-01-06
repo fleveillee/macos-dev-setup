@@ -57,7 +57,7 @@ export SDKMAN_DIR="$HOME/.sdkman"
 
 export PHPBREW_SET_PROMPT=1
 
-source ~/.phpbrew/bashrc
+[[ -s "$HOME/.phpbrew/bashrc" ]] && source $HOME/.phpbrew/bashrc
 
 ################### aliases ###################
 
